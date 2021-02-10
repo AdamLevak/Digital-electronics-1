@@ -11,3 +11,5 @@
 | 1 | 0 | 1 |  |
 | 1 | 1 | 0 |  |
 | 1 | 1 | 1 |  |
+
+https://www.edaplayground.com/x/DriT
