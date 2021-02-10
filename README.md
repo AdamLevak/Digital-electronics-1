@@ -1,6 +1,6 @@
 # Digital-electronics-1
 
-## Adam Levák
+## _Adam Levák_
 ## _221280_ 
 ### _e-mail: xlevak00@vutbr.cz_
 ```
