@@ -2,7 +2,7 @@
 
 ## Adam Levák
 ## 221280 
-### xlevak00@vutbr.cz
+### e-mail: xlevak00@vutbr.cz
 ```
 git status
 git add
