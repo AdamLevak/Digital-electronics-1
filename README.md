@@ -8,3 +8,4 @@ git status
 git add
 git commit
 ```
+Emphasis, aka italics, with *asterisks* or _underscores_.
