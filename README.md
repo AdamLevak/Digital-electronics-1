@@ -2,10 +2,10 @@
 
 ## Adam Levák
 ## 221280 
-### e-mail: xlevak00@vutbr.cz
+### _e-mail: xlevak00@vutbr.cz_
 ```
 git status
 git add
 git commit
 ```
-Emphasis, aka italics, with *asterisks* or _underscores_.
+
