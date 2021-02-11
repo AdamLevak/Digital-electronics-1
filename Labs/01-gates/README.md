@@ -26,7 +26,7 @@ begin
 end architecture dataflow;
 ```
 
-![Screenshot od EDA Playground](images/Signály deMorgan.png)
+![Simulation DeMorgan](Images/deMorgan.png)
 
 -  https://www.edaplayground.com/x/DriT
 
