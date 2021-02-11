@@ -14,7 +14,7 @@
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
 
-###### *Tabuľka zadaných hodnôt* 
+###### *Tabuľka zadaných hodnôt pre rovnicu* 
 ![Rovnica](Images/rovnica.png)
 ## *Task 2* -
 ```vhdl
