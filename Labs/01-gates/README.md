@@ -1,5 +1,5 @@
 # *Lab 1*
-## *Task 1*   *https://github.com/AdamLevak/Digital-electronics-1*
+## *Task 1* -  *https://github.com/AdamLevak/Digital-electronics-1*
 
 
 
