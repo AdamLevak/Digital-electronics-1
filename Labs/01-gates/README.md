@@ -28,6 +28,6 @@ end architecture dataflow;
 
 -  ![Simulácia De Morganove pravidlo](images/Signály deMorgan.png)
 
--https://www.edaplayground.com/x/DriT
+-  https://www.edaplayground.com/x/DriT
 
 ## *Task 3* -
