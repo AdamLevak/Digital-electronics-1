@@ -14,7 +14,7 @@
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
 
-###### *Tabuľka zadaných hodnôt*
+###### *Tabuľka zadaných hodnôt*   f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
 ## *Task 2* -
 ```vhdl
 architecture dataflow of gates is
