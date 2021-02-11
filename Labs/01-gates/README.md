@@ -12,6 +12,6 @@
 | 1 | 1 | 0 |  |
 | 1 | 1 | 1 |  |
 
-*Tabuľka zadaných hodnôt*
+### *Tabuľka zadaných hodnôt*
 
 https://www.edaplayground.com/x/DriT
