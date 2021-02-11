@@ -15,7 +15,7 @@
 | 1 | 1 | 1 | 0 |
 
 ###### *Tabuľka zadaných hodnôt* 
-
+![Rovnica](Images/rovnica.png)
 ## *Task 2* -
 ```vhdl
 architecture dataflow of gates is
