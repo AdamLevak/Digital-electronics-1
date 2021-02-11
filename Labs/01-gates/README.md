@@ -1,4 +1,4 @@
-**Lab 1**
+*Lab 1*
 
 
 | **c** | **b** |**a** | **f(c,b,a)** |
@@ -11,5 +11,7 @@
 | 1 | 0 | 1 |  |
 | 1 | 1 | 0 |  |
 | 1 | 1 | 1 |  |
+
+*Tabuľka zadaných hodnôt*
 
 https://www.edaplayground.com/x/DriT
