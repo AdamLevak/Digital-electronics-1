@@ -26,7 +26,7 @@ begin
 end architecture dataflow;
 ```
 
-![Simulácia De Morganove pravidlo](images/Signály deMorgan.png)
+![Simulácia De Morganove pravidlo](Signály deMorgan.png)
 
 -  https://www.edaplayground.com/x/DriT
 
