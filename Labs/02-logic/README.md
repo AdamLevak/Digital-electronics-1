@@ -17,5 +17,6 @@
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-SoP (equals) = (not(b1) x not(b0) x not(a1) x not(a0))+(not(b1) x b0 x not(a1) x a0)+(b1 x not(b0) x a1 x not(a0))+(b1 x b0 x a1 x a0)
-*PoS (less) =
+- SoP (equals) = (not(b1) x not(b0) x not(a1) x not(a0))+(not(b1) x b0 x not(a1) x a0)+(b1 x not(b0) x a1 x not(a0))+(b1 x b0 x a1 x a0)
+
+- PoS (less) =
