@@ -23,5 +23,14 @@
 
 - PoS (less) = (b1+b0+a1+a0) * (b1+not(b0)+a1+a0) * (b1+not(b0)+a1+not(a0)) * (not(b1)+b0+a1+a0) * (not(b1)+b0+a1+not(a0)) * (not(b1)+b0+not(a1)+a0) * (not(b1)+b0+a1+not(a0)) * (not(b1)+not(b0)+a1+not(a0)) * (not(b1)+not(b0)+not(a1)+a0) * (not(b1)+not(b0)+not(a1)+not(a0)) (*pracovna verzia*)
 
-- https://www.edaplayground.com/x/vHX2 eda odkaz (hotovo) (4-bit komparator)
+## *Task 2*
+
+
+
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
+## *Task 3*
+
+
+
+
+- https://www.edaplayground.com/x/vHX2 eda odkaz (hotovo) (4-bit komparator)
