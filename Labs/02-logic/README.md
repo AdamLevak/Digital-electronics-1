@@ -31,6 +31,14 @@
 
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
 ## *Task 3*
+ ```vhdl 
+architecture Behavioral of comparator_4bit is
+begin
+    B_less_A_o     <= '1' when (b_i < a_i) else '0';
+    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
+    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
+```
+end architecture Behavioral;
 
 
 
