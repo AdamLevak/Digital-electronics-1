@@ -21,7 +21,7 @@
 
 
 ## *Task 2*
-
+![K-maps](Images/Grafy.png)
 
 
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
