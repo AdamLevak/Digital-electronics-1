@@ -100,6 +100,6 @@ end architecture Behavioral;
         wait;
     end process p_stimulus;
 ```
-
+- ![výpis v konzole](Images/Konzola.png)
 
 - https://www.edaplayground.com/x/vHX2 eda odkaz (hotovo) (4-bit komparator)
