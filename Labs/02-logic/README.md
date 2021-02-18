@@ -26,6 +26,9 @@
 - Second graph **B > A** (SoP)
 - Third graph **B < A**  (PoS)
 
+![SoP](Images/SoP.png)
+![PoS](Images/PoS.png)
+
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
 ## *Task 3*
 
