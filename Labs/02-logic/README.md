@@ -22,9 +22,9 @@
 
 ## *Task 2*
 ![K-maps](Images/Grafy.png)
-- First graph **B equals A**               
-- Second graph **B is greater than A**
-- Third graph **B is less than A**
+- First graph **B = A**               
+- Second graph **B > A**
+- Third graph **B < A**
 
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
 ## *Task 3*
