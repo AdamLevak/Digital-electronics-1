@@ -29,7 +29,7 @@
 - ![SoP](Images/SoP.png)
 - ![PoS](Images/PoS.png)
 
-- https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
+- https://www.edaplayground.com/x/RhLz (2-bit komparator)
 ## *Task 3*
 - VHDL achitecture
 ```vhdl 
@@ -104,4 +104,4 @@ end architecture Behavioral;
 
 - ![výpis v konzole](Images/Konzola.png)
 
-- https://www.edaplayground.com/x/vHX2 
+- https://www.edaplayground.com/x/vHX2 (4-bit komparator)
