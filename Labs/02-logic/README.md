@@ -23,8 +23,8 @@
 ## *Task 2*
 ![K-maps](Images/Grafy.png)
 - First graph **B = A**               
-- Second graph **B > A**
-- Third graph **B < A**
+- Second graph **B > A** (SoP)
+- Third graph **B < A**  (PoS)
 
 - https://www.edaplayground.com/x/RhLz eda odkaz (hotovo) (2-bit komparator)
 ## *Task 3*
