@@ -50,7 +50,7 @@ begin
 
 
 ## *Task 3*
-
-
+- Prvý krok vytvorenie projektu
+![Step 1](Images/1.png)
 
 
