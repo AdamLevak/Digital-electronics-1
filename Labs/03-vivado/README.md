@@ -53,4 +53,15 @@ begin
 - Prvý krok vytvorenie projektu
 ![Step 1](Images/1.png)
 
+- krok 2 pridanie zdrojového súboru
+![Step 2](Images/3.png)
+
+- testbench file pridáme pomocou položky file ---> add sources 
+![Step 3](Images/8.png)
+
+
+
+
+
+
 
