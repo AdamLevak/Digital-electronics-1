@@ -46,7 +46,7 @@ begin
 
 ```
 - Screenshot 
-- ![Signals](Images/signals.png)
+![Signals](Images/signals.png)
 
 
 ## *Task 3*
