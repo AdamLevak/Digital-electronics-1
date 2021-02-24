@@ -59,7 +59,8 @@ begin
 - testbench file pridáme pomocou položky file ---> add sources 
 ![Step 3](Images/8.png)
 
-
+- spustenie simulácie
+![Step 4](Images/9.png)
 
 
 
