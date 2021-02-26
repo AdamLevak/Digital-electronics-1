@@ -1,7 +1,10 @@
 # *Lab 3*
 ## *Task 1*
+- Schéma
+![s](Images/Task1.png)
 
-dokončiť
+- Doska
+![board](Images/doska.png)
 
 ## *Task 2*
 - VHLD architecture
