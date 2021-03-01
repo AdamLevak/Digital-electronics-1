@@ -1,7 +1,9 @@
 # *Lab 3*
 ## *Task 1*
 - Schéma
-![s](Images/Task1.png)
+![s](Images/schema.png)
+
+*LED active-high*
 
 - Doska
 ![board](Images/doska.png)
