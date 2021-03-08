@@ -1,35 +1,10 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03.03.2021 14:01:41
--- Design Name: 
--- Module Name: top1 - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity top1 is
     Port ( 
@@ -65,10 +40,10 @@ begin
 
     -- Connect one common anode to 3.3V
     AN <= b"1111_0111";
-
+   
     -- Display input value
-    LED(3 downto 0) <= SW;
-
+       LED(3 downto 0) <= SW;
+    
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
        LED(4) <= '1' when (SW = "0000") else '0';
     
@@ -76,10 +51,10 @@ begin
        LED(5) <= '1' when (SW > "1001") else '0'; 
     
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-    -- WRITE YOUR CODE HERE
+       LED(6) <= '1' when (unsigned(SW) mod 2 = 1) else '0';
     
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-    -- WRITE YOUR CODE HERE
-
-
+       LED(7) <= '1' when (SW= "0001" or SW= "0010" or SW= "0100" or SW= "1000") else '0';
+      
+ 
 end Behavioral;
