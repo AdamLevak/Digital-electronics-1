@@ -3,7 +3,7 @@
 
 ![schema](Images/schema.png)
 
-- Table 7-segment display
+- Truth table 7-segment display
 
 | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
