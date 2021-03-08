@@ -1,7 +1,7 @@
 # *Lab 4*
 ## *Task 1*
 
-![s](Images/schema.png)
+![schema](Images/schema.png)
 
 - Table 7-segment display
 
@@ -136,7 +136,7 @@ p_stimulus : process
 ```
 
 - Screenshot with simulated time waveforms
-![s](simul/task2.png)
+![simul](Images/task2.png)
 
 - Listing of VHDL code from source file top.vhd
 ```vhdl
@@ -236,7 +236,7 @@ end Behavioral;
 ```
 
 
-![s](simul/ledsimul.png)
+![simul](Images/ledsimul.png)
 
 
 
