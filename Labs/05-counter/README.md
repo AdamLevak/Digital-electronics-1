@@ -182,7 +182,7 @@ end architecture Behavioral;
 ```
 - Image of the top layer including both counters
 
-
+![schema](Images/obr.jpg)
 
 
 
