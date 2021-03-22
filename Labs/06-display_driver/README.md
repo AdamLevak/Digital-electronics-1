@@ -226,7 +226,7 @@ end architecture Behavioral;
 # Task 3
 
 
-
+![graf](Images/obr.jpg)
 
 
 
