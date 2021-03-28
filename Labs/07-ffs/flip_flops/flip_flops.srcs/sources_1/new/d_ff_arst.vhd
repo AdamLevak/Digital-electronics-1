@@ -47,7 +47,7 @@ begin
 
     p_d_ff_arst : process (clk, arst)
       begin
-            if (arst = '1') then
+        if (arst = '1') then
              q     <= '0';
              q_bar <= '1';
     
