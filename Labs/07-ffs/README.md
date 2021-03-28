@@ -33,16 +33,17 @@
 # Task 2
 - VHDL code listing of the process p_d_latch
 ```vhdl
-    p_d_latch : process (d, arst, en)
-    begin
-        if (arst = '1') then
-            q       <= '0';
-            q_bar   <= '1';
-        elsif (en = '1') then
-            q       <= d;
-            q_bar   <= not d;
-        end if;
-    end process p_d_latch;
+     p_d_latch : process (d, arst, en)
+   begin
+     if   (arst = '1') then
+            q     <= '0';
+            q_bar <= '1';
+     elsif (en = '1')  then
+            q     <= d;
+            q_bar <= not d;
+       
+     end if;
+   end process p_d_latch;  
 ```
 - Listing of VHDL reset and stimulus processes from the testbench tb_d_latch.vhd
 
