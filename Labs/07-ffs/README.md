@@ -50,11 +50,34 @@
 - Screenshot with simulated time waveforms
 
 
+# Task 3
+## d_ff_arst
+- VHDL code listing of the process
+-
+- Screenshot with simulated time waveforms
+## d_ff_rst
+- VHDL code listing of the process
+
+- Listing of VHDL reset and stimulus processes
+
+- Screenshot with simulated time waveforms
+
+## jk_ff_rst
+- VHDL code listing of the process
+
+- Listing of VHDL reset and stimulus processes
+
+- Screenshot with simulated time waveforms
+
+## t_ff_rst
+- VHDL code listing of the process
+
+- Listing of VHDL reset and stimulus processes
+
+- Screenshot with simulated time waveforms
 
 
-
-
-
+# Task 4
 
 
 
