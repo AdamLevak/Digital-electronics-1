@@ -211,8 +211,51 @@
 ```
 - Listing of VHDL reset and stimulus processes
 ```vhdl
+--------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+    p_reset_gen :   process
+    begin
+        s_rst <=  '0';
+         wait for 20 ns;
+        s_rst <=  '1';
+         wait for 20 ns;
+        
+        s_rst <=  '0';
+         wait for 20 ns;
+        s_rst <=  '1';
+         wait for 20 ns;
+        
+        s_rst <=  '0';
+        
+         wait;
+    end process p_reset_gen;
+    
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+         report "Stimulus process started" severity note;
+        s_d     <= '0';
+         wait for 10 ns;
+        s_d     <= '1';
+         wait for 10 ns;
+        s_d     <= '0';
+         wait for 10 ns;
+        s_d     <= '1';
+        
+         assert(s_q =  '1' and s_q_bar = '0')
+         report "First assert" severity error;
+        
+         report "Stimulus process finished" severity note;
+         wait;
+    end process p_stimulus;
+
 ```
 - Screenshot with simulated time waveforms
+
+![waveform](Images/d_ff_rst.png)
 
 ## jk_ff_rst
 - VHDL code listing of the process
@@ -319,6 +362,52 @@ p_jk_ff_rst : process (clk)
 ```
 - Listing of VHDL reset and stimulus processes
 ```vhdl
+--------------------------------------------------------------------
+   -- Reset generation process
+   --------------------------------------------------------------------
+    p_reset_gen : process
+    begin
+        s_rst   <= '0';
+         wait for 10 ns;
+        s_rst   <= '1';                
+         wait for 10 ns;
+        s_rst   <= '0';
+         wait;
+    end process p_reset_gen;
+
+   --------------------------------------------------------------------
+    -- Data generation process
+   --------------------------------------------------------------------     
+    p_stimulus : process
+    begin
+    
+        report "Stimulus process started. ---------------------------------------" severity note;
+        
+         wait for 20 ns;
+        s_t <=  '1';
+         wait for 10ns;
+         assert (s_q = '1' and s_q_bar = '0') --1
+         report "First assert" severity note;
+        
+        s_t <=  '0';
+         wait for 10ns;
+         assert (s_q = '1' and s_q_bar = '0') --2
+         report "Second assert" severity note;
+
+        s_t <=  '1';
+         wait for 10ns;
+         assert (s_q = '0' and s_q_bar = '1') --3 
+         report "Third assert" severity note;
+        
+        s_t <=  '0';
+         wait for 10ns;
+         assert (s_q = '0' and s_q_bar = '1') --4
+         report "Fourth assert" severity note; 
+        
+         report "Stimulus process ended. ---------------------------------------" severity note;
+         wait;
+    end process p_stimulus;
+
 ```
 - Screenshot with simulated time waveforms
 
