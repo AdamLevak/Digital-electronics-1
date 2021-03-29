@@ -414,7 +414,7 @@ p_jk_ff_rst : process (clk)
 ![waveform](Images/t_ff_rst.png)
 
 # Task 4
-
+![4](Images/1.jpg)
 
 
 
