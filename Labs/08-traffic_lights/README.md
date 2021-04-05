@@ -184,7 +184,7 @@ p_smart_traffic_fsm : process(clk)
                             s_state <= WEST_GO;
                             s_cnt   <= c_ZERO;
                         elsif( s_sensor  = '1' and w_sensor = '0') then
-                            s_state <= SOUTH_GO;
+                            s_state <= WEST_WAIT;
                             s_cnt   <= c_ZERO;
                         elsif( s_sensor  = '1' and w_sensor = '1') then
                             s_state <= WEST_GO;
@@ -215,7 +215,7 @@ p_smart_traffic_fsm : process(clk)
                             s_state <= SOUTH_GO;
                             s_cnt   <= c_ZERO;
                         elsif(s_sensor = '0' and w_sensor = '1') then
-                            s_state <= WEST_GO;
+                            s_state <= SOUTH_WAIT;
                             s_cnt   <= c_ZERO;
                         elsif(s_sensor = '1' and w_sensor = '0') then
                             s_state <= SOUTH_GO;
