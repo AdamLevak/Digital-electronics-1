@@ -12,7 +12,7 @@
 
 # Task 2
 - State diagram
-![diagram](Images/diagram1.png)
+![diagram](Images/diagram1.jpg)
 
 - Listing of VHDL code of sequential process p_traffic_fsm
 ```vhdl
@@ -151,7 +151,7 @@
 | `SOUTH_GO`   | green  | red | 4 sec | south = 1 and west = 0 |
 | `SOUTH_WAIT` | yellow | red | 2 sec |  |
 - State diagram
-![diagram](Images/diagram2.png)
+![diagram](Images/diagram2.jpg)
 - Listing of VHDL code of sequential process p_smart_traffic_fsm
 ```vhdl
 p_smart_traffic_fsm : process(clk)
