@@ -137,7 +137,7 @@
     end process p_output_fsm;
 ```
 
-![waveform](Images/ Wavefrom.png)
+![waveform](Images/Wavefrom.png)
 
 
 # Task 3
