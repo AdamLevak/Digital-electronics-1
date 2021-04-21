@@ -1,0 +1,6 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_project/p_stimulus  File: D:/Documents/Levak/Digital-electronics-1/Labs/Project/exercise_bike/exercise_bike.srcs/sim_1/new/velocity_counter_tb.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_project/p_stimulus  File: D:/Documents/Levak/Digital-electronics-1/Labs/Project/exercise_bike/exercise_bike.srcs/sim_1/new/velocity_counter_tb.vhd
