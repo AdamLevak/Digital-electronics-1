@@ -44,35 +44,38 @@ entity Velocity_counter is
             cnt_o_B    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
             cnt_o_C    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
             cnt_o_D    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-            ticks      : out std_logic_vector(g_CNT_WIDTH - 1 downto 0)
-              
+           -- ticks      : out std_logic_vector(g_CNT_WIDTH - 1 downto 0)
+            ticks      : out real  
             );
 end Velocity_counter;
 
 architecture Behavioral of Velocity_counter is  
- -- Local counter
+ -- Local counter    
     signal s_cnt_local_A : unsigned(g_CNT_WIDTH - 1 downto 0);
     signal s_cnt_local_B : unsigned(g_CNT_WIDTH - 1 downto 0);
     signal s_cnt_local_C : unsigned(g_CNT_WIDTH - 1 downto 0);
     signal s_cnt_local_D : unsigned(g_CNT_WIDTH - 1 downto 0);
-    signal s_ticks       : unsigned(g_CNT_WIDTH - 1 downto 0);
-    signal counter       : unsigned(g_CNT_WIDTH - 1 downto 0);
+   -- signal s_ticks       : unsigned(g_CNT_WIDTH - 1 downto 0);
+   -- signal counter       : unsigned(g_CNT_WIDTH - 1 downto 0);
+    signal s_ticks       : real;
+    signal counter       : real;
+    constant kmh         : real:= 3.6;
 begin
 p_vel : process(clk,gen_o)
     begin
         if reset = '1' then
-               s_ticks <= "0000";
-               counter <= "0000";
+               s_ticks <= 0.0;
+               counter <= 0.0;
         elsif rising_edge(gen_o) then                                     
-               counter <= counter + 2;   -- counting up
+               counter <= counter + 2.0;   -- counting up
         elsif rising_edge(clk) then           
-               s_ticks <= counter; 
-               counter <= "0000"; 
+               s_ticks <= counter * kmh ; 
+               counter <= 0.0; 
                                                                                
         end if;        
     end process p_vel;
 
-ticks <= std_logic_vector(s_ticks);
+ticks <= s_ticks;
 -- s_ticks <= s_ticks * (18/5); -- prevod na km/h   
 end Behavioral;
 

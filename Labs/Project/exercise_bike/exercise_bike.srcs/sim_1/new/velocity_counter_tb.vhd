@@ -26,7 +26,8 @@ signal s_cnt_B : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
 signal s_cnt_C : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
 signal s_cnt_D : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
 signal s_gen_o : std_logic;
-signal s_ticks : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
+--signal s_ticks : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
+signal s_ticks : real;
 
 begin
 -- Connecting testbench signals with cnt_project entity
@@ -65,7 +66,7 @@ end process p_clk_gen;
 --------------------------------------------------------------------
 p_hall_gen : process
 begin
-while now < 100200 ns loop -- 100 200 periods of 100MHz clock
+while now < 100200 ns loop 
 s_gen_o <= '0';
 wait for c_gen_o_PERIOD / 2 ;
 s_gen_o <= '1';
