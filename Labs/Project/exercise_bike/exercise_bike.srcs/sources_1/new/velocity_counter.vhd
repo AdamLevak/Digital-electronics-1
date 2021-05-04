@@ -39,27 +39,16 @@ entity Velocity_counter is
     Port ( 
             gen_o      : in std_logic;
             clk        : in std_logic;
-            reset      : in  std_logic;       -- Synchronous reset                       
-            cnt_o_A    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-            cnt_o_B    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-            cnt_o_C    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-            cnt_o_D    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-           -- ticks      : out std_logic_vector(g_CNT_WIDTH - 1 downto 0)
+            reset      : in std_logic;       -- Synchronous reset                       
             ticks      : out real  
             );
 end Velocity_counter;
 
 architecture Behavioral of Velocity_counter is  
  -- Local counter    
-    signal s_cnt_local_A : unsigned(g_CNT_WIDTH - 1 downto 0);
-    signal s_cnt_local_B : unsigned(g_CNT_WIDTH - 1 downto 0);
-    signal s_cnt_local_C : unsigned(g_CNT_WIDTH - 1 downto 0);
-    signal s_cnt_local_D : unsigned(g_CNT_WIDTH - 1 downto 0);
-   -- signal s_ticks       : unsigned(g_CNT_WIDTH - 1 downto 0);
-   -- signal counter       : unsigned(g_CNT_WIDTH - 1 downto 0);
     signal s_ticks       : real;
     signal counter       : real;
-    constant kmh         : real:= 3.6;
+    constant kmh         : real:= 3.6;  
 begin
 p_vel : process(clk,gen_o)
     begin
@@ -71,11 +60,10 @@ p_vel : process(clk,gen_o)
         elsif rising_edge(clk) then           
                s_ticks <= counter * kmh ; 
                counter <= 0.0; 
-                                                                               
+                                                                             
         end if;        
     end process p_vel;
 
-ticks <= s_ticks;
--- s_ticks <= s_ticks * (18/5); -- prevod na km/h   
+ticks <= s_ticks;  
 end Behavioral;
 

@@ -20,14 +20,9 @@ constant c_gen_o_PERIOD : time := 20 ns;
 
 --Local signals
 signal s_clk_100MHz : std_logic;
-signal s_reset : std_logic;
-signal s_cnt_A : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-signal s_cnt_B : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-signal s_cnt_C : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-signal s_cnt_D : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-signal s_gen_o : std_logic;
---signal s_ticks : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-signal s_ticks : real;
+signal s_reset      : std_logic;
+signal s_gen_o      : std_logic;
+signal s_ticks      : real;
 
 begin
 -- Connecting testbench signals with cnt_project entity
@@ -40,10 +35,6 @@ port map(
 clk => s_clk_100MHz,
 reset => s_reset,
 gen_o => s_gen_o,
-cnt_o_A => s_cnt_A,
-cnt_o_B => s_cnt_B,
-cnt_o_C => s_cnt_C,
-cnt_o_D => s_cnt_D,
 ticks   => s_ticks
 );
 
